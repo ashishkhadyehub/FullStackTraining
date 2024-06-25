@@ -9,6 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <%--sweetalert references--%>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -41,12 +46,43 @@
 
                 </div>
                 
-                <asp:Button runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-primary" />
+                <asp:Button OnClientClick="return validform()" runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-primary" />
                 
 
             </div>
         </div>
     </form>
+    <script>
+        function validform() {
+            let name = document.getElementById('<%= this.txtName.ClientID %>').value;
+            let contact = document.getElementById('<%= this.txtContact.ClientID %>').value;
+            let email = document.getElementById('<%= this.txtEmail.ClientID %>').value;
+            let city = document.getElementById('<%= this.ddlCities.ClientID %>').value;
+            let mobilecon = /^\d{10}$/;
+            let emailcon = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([com\co\.\in])+$/;
 
+
+            if (name == "" || contact == "" || email == "" || city == "Select") {
+                swal("Please fill all details..!","","warning");
+                return false;
+            }
+
+            if (contact != '') {
+                if (!contact.match(mobilecon)) {
+                    swal("Invalid contact number..!", "", "warning");
+                    return false;
+                }
+            }
+
+            if (email != '') {
+                if (!email.match(emailcon)) {
+                    swal("Invalid email-Id..!", "", "warning");
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
