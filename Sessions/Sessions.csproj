@@ -73,7 +73,10 @@
     <Content Include="JavaScript.js" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="S1.aspx" />
+    <Content Include="S2.aspx" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="ViewStateExample.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,12 +109,33 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="S1.aspx.cs">
+      <DependentUpon>S1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="S1.aspx.designer.cs">
+      <DependentUpon>S1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="S2.aspx.cs">
+      <DependentUpon>S2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="S2.aspx.designer.cs">
+      <DependentUpon>S2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStateExample.aspx.cs">
+      <DependentUpon>ViewStateExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStateExample.aspx.designer.cs">
+      <DependentUpon>ViewStateExample.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
