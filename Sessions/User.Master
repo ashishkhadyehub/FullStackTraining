@@ -29,6 +29,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="IPExample.aspx">IsPostBack</a>
                     </li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="ViewStateExample.aspx">ViewState</a>
+                    </li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="S1.aspx">Session</a>
+                    </li>
                   
                 </ul>
             </nav>
