@@ -35,6 +35,21 @@
                    <li class="nav-item">
                         <a class="nav-link" href="S1.aspx">Session</a>
                     </li>
+                   <li class="nav-item">
+      <a class="nav-link" href="Cookie1.aspx">Cookies</a>
+  </li>
+                  <li class="nav-item">
+      <a class="nav-link" href="QS1.aspx">Query String</a>
+  </li>
+                                    <li class="nav-item">
+    <a class="nav-link" href="TextChangedExample.aspx">Text Changed Method</a>
+</li>
+                                                        <li class="nav-item">
+    <a class="nav-link" href="SelectedIndexChangedExample.aspx">Selected Index Changed Method</a>
+</li>
+                                                        <li class="nav-item">
+    <a class="nav-link" href="Register.aspx">Store Data to Database</a>
+</li>
                   
                 </ul>
             </nav>

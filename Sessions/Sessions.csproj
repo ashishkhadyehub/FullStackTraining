@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Cookie1.aspx" />
     <Content Include="Cookie2.aspx" />
+    <Content Include="DB\firstdbtable.txt" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Index.aspx" />
     <Content Include="IPExample.aspx" />
@@ -79,6 +80,7 @@
     <Content Include="Register.aspx" />
     <Content Include="S1.aspx" />
     <Content Include="S2.aspx" />
+    <Content Include="SelectedIndexChangedExample.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="TextChangedExample.aspx" />
     <Content Include="ViewStateExample.aspx" />
@@ -156,6 +158,13 @@
     <Compile Include="S2.aspx.designer.cs">
       <DependentUpon>S2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SelectedIndexChangedExample.aspx.cs">
+      <DependentUpon>SelectedIndexChangedExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectedIndexChangedExample.aspx.designer.cs">
+      <DependentUpon>SelectedIndexChangedExample.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TextChangedExample.aspx.cs">
       <DependentUpon>TextChangedExample.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,6 +197,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

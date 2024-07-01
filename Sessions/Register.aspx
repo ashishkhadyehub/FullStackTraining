@@ -32,7 +32,7 @@
 
             </div>
             
-            <asp:Button OnClientClick="return validform()" runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-primary" />
+            <asp:Button OnClientClick="return validform()" OnClick="btnSubmit_Click" runat="server" ID="btnSubmit" Text="Submit" CssClass="btn btn-primary" />
             
 
         </div>
