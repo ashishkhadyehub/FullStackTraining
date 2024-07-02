@@ -70,6 +70,7 @@
     <Content Include="Cookie1.aspx" />
     <Content Include="Cookie2.aspx" />
     <Content Include="DB\firstdbtable.txt" />
+    <Content Include="DB\uploadmediadb.txt" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Index.aspx" />
     <Content Include="IPExample.aspx" />
@@ -77,12 +78,14 @@
     <Content Include="Login.aspx" />
     <Content Include="QS1.aspx" />
     <Content Include="QS2.aspx" />
+    <Content Include="ReadData.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="S1.aspx" />
     <Content Include="S2.aspx" />
     <Content Include="SelectedIndexChangedExample.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="TextChangedExample.aspx" />
+    <Content Include="UploadMedia.aspx" />
     <Content Include="ViewStateExample.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -137,6 +140,13 @@
     <Compile Include="QS2.aspx.designer.cs">
       <DependentUpon>QS2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ReadData.aspx.cs">
+      <DependentUpon>ReadData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReadData.aspx.designer.cs">
+      <DependentUpon>ReadData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,6 +182,13 @@
     <Compile Include="TextChangedExample.aspx.designer.cs">
       <DependentUpon>TextChangedExample.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UploadMedia.aspx.cs">
+      <DependentUpon>UploadMedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadMedia.aspx.designer.cs">
+      <DependentUpon>UploadMedia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,7 +214,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Photos\" />
+    <Folder Include="ThumbPhotos\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

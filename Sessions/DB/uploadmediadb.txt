@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[DBPhotos](
+	[Srno] [int] IDENTITY(1,1) NOT NULL,
+	[ThumbPhoto] [nvarchar](500) NULL,
+	[OriginalPhoto] [nvarchar](500) NULL,
+	[SubmitDate] [date] NULL
+) ON [PRIMARY]
