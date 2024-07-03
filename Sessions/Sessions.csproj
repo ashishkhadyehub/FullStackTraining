@@ -71,6 +71,7 @@
     <Content Include="Cookie2.aspx" />
     <Content Include="DB\firstdbtable.txt" />
     <Content Include="DB\uploadmediadb.txt" />
+    <Content Include="GV.aspx" />
     <Content Include="HtmlPage1.html" />
     <Content Include="Index.aspx" />
     <Content Include="IPExample.aspx" />
@@ -103,6 +104,13 @@
     </Compile>
     <Compile Include="Cookie2.aspx.designer.cs">
       <DependentUpon>Cookie2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GV.aspx.cs">
+      <DependentUpon>GV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GV.aspx.designer.cs">
+      <DependentUpon>GV.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
