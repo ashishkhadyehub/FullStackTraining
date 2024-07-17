@@ -53,6 +53,10 @@
     <a class="nav-link" href="UploadMedia.aspx">Upload Media</a>
 </li><li class="nav-item">
     <a class="nav-link" href="ReadData.aspx">View data from DB</a>
+</li><li class="nav-item">
+    <a class="nav-link" href="GV.aspx">Gridview</a>
+</li><li class="nav-item">
+    <a class="nav-link" href="LitrelExample.aspx">Literal</a>
 </li>
                   
                 </ul>
