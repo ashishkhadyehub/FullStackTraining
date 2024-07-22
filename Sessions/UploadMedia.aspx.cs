@@ -25,6 +25,7 @@ namespace Sessions
                 string ext = System.IO.Path.GetExtension(file.FileName);
                 Guid g = Guid.NewGuid();
                 string imgName = g + ext;
+               
                 string pathimg = "Photos/" + imgName;
                 file.SaveAs(Server.MapPath(pathimg));
 
