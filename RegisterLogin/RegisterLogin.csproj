@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0A92ED75-2527-42B9-8711-F56E5D0BD77E}</ProjectGuid>
+    <ProjectGuid>{FD5B4E75-0E47-42C8-8F82-DD5FF4B2ACF4}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sessions</RootNamespace>
-    <AssemblyName>Sessions</AssemblyName>
+    <RootNamespace>RegisterLogin</RootNamespace>
+    <AssemblyName>RegisterLogin</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -67,61 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ASPValidations.aspx" />
-    <Content Include="Cookie1.aspx" />
-    <Content Include="Cookie2.aspx" />
-    <Content Include="css\fluid-gallery.css" />
-    <Content Include="DB\firstdbtable.txt" />
-    <Content Include="DB\uploadmediadb.txt" />
-    <Content Include="GV.aspx" />
-    <Content Include="HtmlPage1.html" />
+    <Content Include="DB\projectdb.txt" />
+    <Content Include="Images\home.jpg" />
     <Content Include="Index.aspx" />
-    <Content Include="IPExample.aspx" />
-    <Content Include="JavaScript.js" />
-    <Content Include="LitrelExample.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="QS1.aspx" />
-    <Content Include="QS2.aspx" />
-    <Content Include="ReadData.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="RepeaterExample.aspx" />
-    <Content Include="S1.aspx" />
-    <Content Include="S2.aspx" />
-    <Content Include="SelectedIndexChangedExample.aspx" />
-    <Content Include="StyleSheet1.css" />
-    <Content Include="TextChangedExample.aspx" />
-    <Content Include="UploadMedia.aspx" />
-    <Content Include="ViewStateExample.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ASPValidations.aspx.cs">
-      <DependentUpon>ASPValidations.aspx</DependentUpon>
+    <Compile Include="Employee.Master.cs">
+      <DependentUpon>Employee.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ASPValidations.aspx.designer.cs">
-      <DependentUpon>ASPValidations.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cookie1.aspx.cs">
-      <DependentUpon>Cookie1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cookie1.aspx.designer.cs">
-      <DependentUpon>Cookie1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cookie2.aspx.cs">
-      <DependentUpon>Cookie2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cookie2.aspx.designer.cs">
-      <DependentUpon>Cookie2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GV.aspx.cs">
-      <DependentUpon>GV.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GV.aspx.designer.cs">
-      <DependentUpon>GV.aspx</DependentUpon>
+    <Compile Include="Employee.Master.designer.cs">
+      <DependentUpon>Employee.Master</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -130,20 +90,6 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="IPExample.aspx.cs">
-      <DependentUpon>IPExample.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="IPExample.aspx.designer.cs">
-      <DependentUpon>IPExample.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LitrelExample.aspx.cs">
-      <DependentUpon>LitrelExample.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LitrelExample.aspx.designer.cs">
-      <DependentUpon>LitrelExample.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,28 +97,14 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QS1.aspx.cs">
-      <DependentUpon>QS1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="QS1.aspx.designer.cs">
-      <DependentUpon>QS1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="QS2.aspx.cs">
-      <DependentUpon>QS2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="QS2.aspx.designer.cs">
-      <DependentUpon>QS2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ReadData.aspx.cs">
-      <DependentUpon>ReadData.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ReadData.aspx.designer.cs">
-      <DependentUpon>ReadData.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,66 +112,10 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepeaterExample.aspx.cs">
-      <DependentUpon>RepeaterExample.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RepeaterExample.aspx.designer.cs">
-      <DependentUpon>RepeaterExample.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="S1.aspx.cs">
-      <DependentUpon>S1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="S1.aspx.designer.cs">
-      <DependentUpon>S1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="S2.aspx.cs">
-      <DependentUpon>S2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="S2.aspx.designer.cs">
-      <DependentUpon>S2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SelectedIndexChangedExample.aspx.cs">
-      <DependentUpon>SelectedIndexChangedExample.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SelectedIndexChangedExample.aspx.designer.cs">
-      <DependentUpon>SelectedIndexChangedExample.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="TextChangedExample.aspx.cs">
-      <DependentUpon>TextChangedExample.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="TextChangedExample.aspx.designer.cs">
-      <DependentUpon>TextChangedExample.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UploadMedia.aspx.cs">
-      <DependentUpon>UploadMedia.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UploadMedia.aspx.designer.cs">
-      <DependentUpon>UploadMedia.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="User.Master.cs">
-      <DependentUpon>User.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User.Master.designer.cs">
-      <DependentUpon>User.Master</DependentUpon>
-    </Compile>
-    <Compile Include="ViewStateExample.aspx.cs">
-      <DependentUpon>ViewStateExample.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewStateExample.aspx.designer.cs">
-      <DependentUpon>ViewStateExample.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Employee.Master" />
     <None Include="packages.config" />
-    <Content Include="User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -247,10 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Photos\" />
-    <Folder Include="ThumbPhotos\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -264,9 +137,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>60280</DevelopmentServerPort>
+          <DevelopmentServerPort>50491</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1025/</IISUrl>
+          <IISUrl>http://localhost:50491/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
